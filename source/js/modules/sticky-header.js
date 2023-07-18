@@ -9,6 +9,7 @@ const initStickyHeader = () => {
             hero.style.marginTop = `${header.offsetHeight}px`;
         } else {
             header.classList.remove('header-fixed');
+            hero.style.marginTop = '0px';
         }
     });
 };

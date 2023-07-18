@@ -1,0 +1,20 @@
+.title {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 30px 0;
+    color: $color-shaft;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $color-green;
+}
