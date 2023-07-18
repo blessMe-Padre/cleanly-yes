@@ -6,11 +6,18 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
+
+    @include vp-1023 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .services__sticky {
     position: sticky;
+    display: block;
     top: 100px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .services__descriptions p {
@@ -25,19 +32,35 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
+
+    @include vp-575 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.services__item {
+    border-bottom: 2px solid $color-light-green;
 }
 
 .services__item-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.services__item-inner p {
+    margin: 0;
+    font-size: 18px;
 }
 
 .services__item-img {
     background-color: $color-placeholder;
     margin-bottom: 15px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .services__item-img img {
@@ -45,4 +68,11 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.services__item-img:hover {
+    img {
+        transform: scale(1.1);
+    }
 }
