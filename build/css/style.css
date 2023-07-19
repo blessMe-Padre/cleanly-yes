@@ -2200,12 +2200,11 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 10px;
 }
 
 .services__item {
-  -webkit-box-shadow: rgba(37, 94, 15, 0.24) 0px 3px 8px;
-  box-shadow: rgba(37, 94, 15, 0.24) 0px 3px 8px;
+  position: relative;
 }
 
 .services__item-inner {
@@ -2218,17 +2217,27 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 15px 10px;
+  padding: 15px 20px;
+  position: absolute;
+  background-color: rgba(122, 122, 122, 0.6);
+  border-radius: 10px;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 2px #000;
 }
 
 .services__item-inner p {
+  color: #fff;
   margin: 0;
   font-size: 18px;
 }
 
 .services__item-img {
   background-color: #e1f3da;
-  margin-bottom: 15px;
   overflow: hidden;
 }
 
@@ -2242,7 +2251,7 @@ button,
   transition: all 0.3s ease;
 }
 
-.services__item-img:hover img {
+.services__item:hover img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -2781,6 +2790,5 @@ textarea.form__input {
   .services__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 }
