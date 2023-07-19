@@ -1,5 +1,6 @@
 .reviews {
     padding: 100px 0;
+    background-color: $color-placeholder;
 }
 
 .reviews__wrapper {
@@ -43,11 +44,11 @@
     color: $color-green;
 }
 
-.swiper-pagination-bullet {
+.reviews .swiper-pagination-bullet {
     height: 16px;
     width: 16px;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.reviews .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: $color-green;
 }

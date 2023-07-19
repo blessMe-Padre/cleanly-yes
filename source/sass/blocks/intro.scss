@@ -42,6 +42,10 @@
         position: static;
         height: 100%;
     }
+
+    @include vp-575 {
+        width: 100%;
+    }
 }
 
 .intro__item-img img {
@@ -61,5 +65,9 @@
         min-height: auto;
         margin-top: 15px;
         order: 2;
+    }
+
+    @include vp-575 {
+        padding: 35px 45px 35px 45px;
     }
 }
