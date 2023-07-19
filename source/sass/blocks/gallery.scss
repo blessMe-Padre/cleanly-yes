@@ -1,0 +1,9 @@
+.gallery {
+    padding: 70px 0;
+}
+
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
