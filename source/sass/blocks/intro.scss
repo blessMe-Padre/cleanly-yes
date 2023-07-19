@@ -1,6 +1,6 @@
 .intro {
     padding: 70px 0;
-    background-color: $color-placeholder;
+    background: linear-gradient(90deg, rgba(169, 221, 173, 1) 1%, rgba(245, 252, 245, 1) 35%, rgba(233, 247, 233, 1) 77%, rgba(169, 221, 173, 1) 100%);
 }
 
 .intro__swiper {
@@ -59,6 +59,7 @@
     padding: 45px 120px 35px 35px;
     background-color: #fff;
     min-height: 650px;
+    border: 1px solid $color-green;
     border-radius: 25px;
 
     @include vp-767 {

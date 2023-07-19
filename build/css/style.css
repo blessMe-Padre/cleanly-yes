@@ -2121,7 +2121,9 @@ button,
 
 .intro {
   padding: 70px 0;
-  background-color: #e1f3da;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
+  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
 }
 
 .intro__swiper {
@@ -2163,11 +2165,15 @@ button,
   padding: 45px 120px 35px 35px;
   background-color: #fff;
   min-height: 650px;
+  border: 1px solid #255E0F;
   border-radius: 25px;
 }
 
 .services {
   padding: 100px 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
+  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
 }
 
 .services__wrapper {
@@ -2259,6 +2265,10 @@ button,
 
 .svg-white-bg {
   fill: #e1f3da;
+}
+
+.svg-white-bg-1 {
+  fill: #D3E1E2;
 }
 
 .reviews {
@@ -2381,10 +2391,10 @@ button,
 }
 
 .contact-us {
-  padding: 70px 0;
-  background: url("../../img/content/green-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 120px 0 70px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
+  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
 }
 
 .form-wrapper {
@@ -2397,6 +2407,15 @@ button,
 
 .form-wrapper * {
   outline: none;
+}
+
+.form__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .form__body {
@@ -2659,6 +2678,10 @@ textarea.form__input {
 
 .gallery {
   padding: 70px 0;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
+  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
 }
 
 .gallery__wrapper {
@@ -2666,6 +2689,31 @@ textarea.form__input {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
+}
+
+.gallery__link {
+  position: relative;
+}
+
+.gallery__link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(122, 122, 122, 0.5);
+  background-image: url("../img/svg/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.gallery__link:hover.gallery__link::before {
+  opacity: 1;
 }
 
 @media (max-width: 1200px) {

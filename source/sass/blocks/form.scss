@@ -1,8 +1,6 @@
 .contact-us {
-    padding: 70px 0;
-    background: url('../../img/content/green-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 120px 0 70px;
+    background: linear-gradient(90deg, rgba(169, 221, 173, 1) 1%, rgba(245, 252, 245, 1) 35%, rgba(233, 247, 233, 1) 77%, rgba(169, 221, 173, 1) 100%);
 }
 
 .form-wrapper {
@@ -15,6 +13,11 @@
 
 .form-wrapper * {
     outline: none;
+}
+
+.form__inner {
+    display: flex;
+    justify-content: space-between;
 }
 
 .form__body {
@@ -196,8 +199,6 @@ textarea.form__input {
     top: 3px;
     box-shadow: 0 2px 0 $color-green;
 }
-
-.file {}
 
 .file__item {
     position: relative;
