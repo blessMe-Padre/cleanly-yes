@@ -5296,6 +5296,7 @@ button,
   display: inline-block;
   position: relative;
   padding-bottom: 10px;
+  color: #255E0F;
 }
 
 .title::before {
@@ -5870,6 +5871,7 @@ button,
   padding: 35px 25px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  color: #255E0F;
 }
 
 .about__item h3 {
@@ -6352,6 +6354,7 @@ textarea.form__input {
 .price__list p {
   margin: 0;
   padding-right: 10px;
+  line-height: 1.1;
 }
 
 .price__btn {
@@ -6456,11 +6459,23 @@ textarea.form__input {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .form__body::before {
+    right: 0;
+    top: -120px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .footer {
+    padding: 25px 0 50px;
   }
 
   .hero__wrapper h2 {
@@ -6469,6 +6484,10 @@ textarea.form__input {
 
   .hero__wrapper p {
     font-size: 24px;
+  }
+
+  .intro {
+    padding: 40px 0;
   }
 
   .intro__block {
@@ -6503,17 +6522,29 @@ textarea.form__input {
     order: 2;
   }
 
+  .services {
+    padding: 40px 0;
+  }
+
+  .reviews {
+    padding: 40px 0;
+  }
+
+  .about {
+    padding: 40px 0;
+  }
+
   .about__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
-  .form__body::before {
-    right: 0;
-    top: -120px;
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+  .contact-us {
+    padding: 90px 0 40px;
+  }
+
+  .gallery {
+    padding: 40px 0;
   }
 
   .price__wrapper {
