@@ -8,6 +8,7 @@ import baguetteBox from './modules/baguettebox.js';
 import { initIntroSlider } from './modules/intro-slider';
 import { initScroll } from './modules/scroll';
 import WOW from './modules/wow';
+import { initTabs } from './modules/tabs';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSlider();
   initMask();
   initValidation();
+  initTabs();
   baguetteBox.run('.gallery__wrapper');
   new WOW().init();
 });
