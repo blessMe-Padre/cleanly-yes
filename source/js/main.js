@@ -6,11 +6,14 @@ import { initMask } from './modules/mask';
 import { initValidation } from './modules/validation';
 import baguetteBox from './modules/baguettebox.js';
 import { initIntroSlider } from './modules/intro-slider';
+import { initScroll } from './modules/scroll';
+import WOW from './modules/wow';
 
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
+  initScroll();
   initStickyHeader();
   initNav();
   initScrollToTop();
@@ -19,4 +22,5 @@ window.addEventListener('DOMContentLoaded', () => {
   initMask();
   initValidation();
   baguetteBox.run('.gallery__wrapper');
+  new WOW().init();
 });
