@@ -1,18 +1,23 @@
 .footer {
-  position: relative;
-  padding: 75px 0 25px;
-  background-color: $color-green;
-  color: $color-default-white;
+  padding: 70px 0 100px;
+  background-image: url('../img/content/young-green-grass-1.png');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.footer__wrapper {
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.footer__item {
   text-align: center;
 }
 
-.footer__address {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-}
-
-.footer__text {
+.footer__item p {
+  font-size: 18px;
   margin: 0 0 10px 0;
 }

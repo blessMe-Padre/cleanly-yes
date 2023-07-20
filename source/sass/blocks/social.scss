@@ -1,0 +1,23 @@
+.social {}
+
+.social__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__item {
+    margin-right: 20px;
+}
+
+.social__item svg {
+    fill: $color-green;
+    transition: all 0.3s ease-in;
+}
+
+.social__item:hover svg {
+    fill: $color-light-green;
+}

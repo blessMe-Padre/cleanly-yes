@@ -13,6 +13,7 @@
     min-height: 0;
     max-width: 1024px;
     margin: 0 auto;
+    padding: 10px 25px;
 
     @include vp-767 {
         flex-direction: column;
@@ -59,7 +60,7 @@
     padding: 45px 120px 35px 35px;
     background-color: #fff;
     min-height: 650px;
-    border: 1px solid $color-green;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 25px;
 
     @include vp-767 {

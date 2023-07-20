@@ -1771,7 +1771,9 @@ button,
   color: #262626;
   font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  background-color: #D3E1E2;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
+  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
 }
 
 .page-lock::before {
@@ -1804,6 +1806,11 @@ button,
   height: 2px;
   width: 100%;
   background-color: #8CC62A;
+}
+
+.title--h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
 }
 
 .header {
@@ -2053,28 +2060,33 @@ button,
 }
 
 .footer {
-  position: relative;
-  padding: 75px 0 25px;
-  background-color: #255E0F;
-  color: #ffffff;
+  padding: 70px 0 100px;
+  background-image: url("../img/content/young-green-grass-1.png");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.footer__item {
   text-align: center;
 }
 
-.footer__address {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-}
-
-.footer__text {
+.footer__item p {
+  font-size: 18px;
   margin: 0 0 10px 0;
 }
 
 .hero {
   height: 92.5vh;
   background-color: #c6c6c6;
-  background-image: url("../../img/content/hero-bg .jpg");
+  background-image: url("../img/content/hero-bg .jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2138,6 +2150,7 @@ button,
   min-height: 0;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 10px 25px;
 }
 
 .intro__item-pictures {
@@ -2165,7 +2178,8 @@ button,
   padding: 45px 120px 35px 35px;
   background-color: #fff;
   min-height: 650px;
-  border: 1px solid #255E0F;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 25px;
 }
 
@@ -2332,6 +2346,7 @@ button,
 
 .about {
   padding: 70px 0;
+  background-color: #D3E1E2;
 }
 
 .about__wrapper {
@@ -2714,6 +2729,36 @@ textarea.form__input {
 
 .gallery__link:hover.gallery__link::before {
   opacity: 1;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 20px;
+}
+
+.social__item svg {
+  fill: #255E0F;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.social__item:hover svg {
+  fill: #8CC62A;
 }
 
 @media (max-width: 1200px) {
