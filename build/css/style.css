@@ -5762,6 +5762,7 @@ button,
 .services__item-img {
   background-color: #e1f3da;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .services__item-img img {
@@ -5772,6 +5773,7 @@ button,
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .services__item:hover img {
@@ -6227,6 +6229,11 @@ textarea.form__input {
 
 .gallery__link {
   position: relative;
+  border-radius: 10px;
+}
+
+.gallery__link img {
+  border-radius: 10px;
 }
 
 .gallery__link::before {
@@ -6244,6 +6251,7 @@ textarea.form__input {
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   opacity: 0;
+  border-radius: 10px;
 }
 
 .gallery__link:hover.gallery__link::before {

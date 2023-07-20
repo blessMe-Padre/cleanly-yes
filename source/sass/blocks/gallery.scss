@@ -16,6 +16,11 @@
 
 .gallery__link {
     position: relative;
+    border-radius: 10px;
+}
+
+.gallery__link img {
+    border-radius: 10px;
 }
 
 .gallery__link::before {
@@ -31,6 +36,7 @@
     background-position: 50% 50%;
     transition: opacity 0.3s ease;
     opacity: 0;
+    border-radius: 10px;
 }
 
 .gallery__link:hover.gallery__link::before {
