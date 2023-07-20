@@ -1,0 +1,14 @@
+.link {
+    display: inline-block;
+    background-color: $color-light-green;
+    color: $color-default-white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.link:hover {
+    background-color: $color-green;
+    color: $color-default-white;
+    box-shadow: rgba(74, 188, 30, 0.2) 0px 4px 12px;
+}
