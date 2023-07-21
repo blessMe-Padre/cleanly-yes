@@ -9,6 +9,7 @@ import { initIntroSlider } from './modules/intro-slider';
 import { initScroll } from './modules/scroll';
 import WOW from './modules/wow';
 import { initTabs } from './modules/tabs';
+import { initAccordions } from './modules/accordion';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initMask();
   initValidation();
   initTabs();
+  initAccordions();
   baguetteBox.run('.gallery__wrapper');
   new WOW().init();
 });
