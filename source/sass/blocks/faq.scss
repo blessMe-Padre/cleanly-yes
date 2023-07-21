@@ -4,8 +4,24 @@
 }
 
 .faq__wrapper {
-    max-width: 800px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+
+    @include vp-767 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.faq__block {
+    @include vp-767 {
+        grid-row: 1/2;
+    }
+}
+
+.faq__sticky {
+    position: sticky;
+    top: 100px;
 }
 
 .faq__list {
@@ -16,7 +32,7 @@
 
 .faq__item {
     padding: 15px 0;
-    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid $color-green;
 }
 
 .faq__btn {

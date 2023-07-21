@@ -6390,8 +6390,16 @@ textarea.form__input {
 }
 
 .faq__wrapper {
-  max-width: 800px;
-  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.faq__sticky {
+  position: sticky;
+  top: 100px;
 }
 
 .faq__list {
@@ -6402,7 +6410,7 @@ textarea.form__input {
 
 .faq__item {
   padding: 15px 0;
-  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #255E0F;
 }
 
 .faq__btn {
@@ -6658,6 +6666,17 @@ textarea.form__input {
   .price__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .faq__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .faq__block {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
   }
 }
 
