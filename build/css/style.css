@@ -5378,10 +5378,25 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: relative;
+  padding-left: 30px;
 }
 
 .logo__link span {
   color: #8CC62A;
+}
+
+.logo__link::before {
+  content: '';
+  position: absolute;
+  padding: 0;
+  top: -15px;
+  left: -0;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/content/clever.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav {
