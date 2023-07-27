@@ -56,3 +56,54 @@
 .reviews .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: $color-green;
 }
+
+.reviews__cringe {
+    margin-top: 100px;
+}
+
+.reviews__cringe-wrapper {
+    position: relative;
+    border: 2px solid $color-light-green;
+    border-radius: 25px;
+    padding: 25px 0;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.reviews__cringe-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 142px;
+    height: 417px;
+    background-image: url('../img/buble-1.png');
+    background-repeat: no-repeat;
+}
+
+.reviews__cringe-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 312px;
+    height: 482px;
+    background-image: url('../img/buble-2.png');
+    background-repeat: no-repeat;
+}
+
+.reviews__cringe-text {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.reviews__cringe-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+    color: $color-green;
+    text-align: center;
+}
