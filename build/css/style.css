@@ -5271,9 +5271,9 @@ button,
   color: #262626;
   font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
-  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
-  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #c5efc9), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#c5efc9));
+  background: -o-linear-gradient(left, #c5efc9 1%, #f5fcf5 35%, #e9f7e9 77%, #c5efc9 100%);
+  background: linear-gradient(90deg, #c5efc9 1%, #f5fcf5 35%, #e9f7e9 77%, #c5efc9 100%);
 }
 
 .page-lock::before {
@@ -5870,11 +5870,12 @@ button,
 
 .reviews__cringe-wrapper {
   position: relative;
-  border: 2px solid #8CC62A;
-  border-radius: 25px;
-  padding: 25px 0;
   max-width: 1024px;
   margin: 0 auto;
+  border-radius: 10px;
+  padding: 25px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .reviews__cringe-wrapper::before {
@@ -5979,9 +5980,9 @@ button,
 
 .contact-us {
   padding: 120px 0 70px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
-  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
-  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #c5efc9), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#c5efc9));
+  background: -o-linear-gradient(left, #c5efc9 1%, #f5fcf5 35%, #e9f7e9 77%, #c5efc9 100%);
+  background: linear-gradient(90deg, #c5efc9 1%, #f5fcf5 35%, #e9f7e9 77%, #c5efc9 100%);
 }
 
 .form-wrapper {
@@ -6281,9 +6282,9 @@ textarea.form__input {
 .gallery {
   padding: 70px 0;
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #a9ddad), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#a9ddad));
-  background: -o-linear-gradient(left, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
-  background: linear-gradient(90deg, #a9ddad 1%, #f5fcf5 35%, #e9f7e9 77%, #a9ddad 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #c5efc9), color-stop(35%, #f5fcf5), color-stop(77%, #e9f7e9), to(#c5efc9));
+  background: -o-linear-gradient(left, #c5efc9 1%, #f5fcf5 35%, #e9f7e9 77%, #c5efc9 100%);
+  background: linear-gradient(90deg, #c5efc9 1%, #f5fcf5 35%, #e9f7e9 77%, #c5efc9 100%);
 }
 
 .gallery__wrapper {
