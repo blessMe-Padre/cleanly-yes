@@ -5288,9 +5288,10 @@ button,
 }
 
 .title {
-  font-size: 36px;
+  font-size: calc(26px + 10 * ((100vw - 320px) / 1600));
   line-height: 1.2;
-  margin: 0 0 30px 0;
+  margin: 0;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
   color: #262626;
   font-weight: 500;
   display: inline-block;
@@ -5316,7 +5317,7 @@ button,
 
 .header {
   position: relative;
-  background: #255E0F;
+  background: #41a719;
   min-height: 70px;
   left: 0;
   width: 100%;
@@ -5905,6 +5906,7 @@ button,
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
+  padding: 0 10px;
 }
 
 .reviews__cringe-title {
@@ -6558,6 +6560,12 @@ textarea.form__input {
   opacity: 1;
 }
 
+@media (min-width: 1200px) {
+  .logo__link--header {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     min-height: 62px;
@@ -6683,6 +6691,7 @@ textarea.form__input {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding: 10px 5px;
   }
 
   .intro__item-pictures {
@@ -6695,6 +6704,11 @@ textarea.form__input {
   .intro__item-img {
     position: static;
     height: 100%;
+    border-radius: 10px;
+  }
+
+  .intro__item-img img {
+    border-radius: 10px;
   }
 
   .intro__item-descriptions {
@@ -6713,6 +6727,10 @@ textarea.form__input {
     padding: 40px 0;
   }
 
+  .reviews__wrapper {
+    margin-top: 30px;
+  }
+
   .about {
     padding: 40px 0;
   }
@@ -6720,6 +6738,10 @@ textarea.form__input {
   .about__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .about__block {
+    padding: 0;
   }
 
   .contact-us {
@@ -6730,9 +6752,21 @@ textarea.form__input {
     padding: 40px 0;
   }
 
+  .price {
+    padding: 30px 0;
+  }
+
   .price__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .price__btn {
+    margin-bottom: 15px;
+  }
+
+  .faq {
+    padding: 30px 0;
   }
 
   .faq__wrapper {
@@ -6757,7 +6791,7 @@ textarea.form__input {
   }
 
   .intro__item-descriptions {
-    padding: 35px 45px 35px 45px;
+    padding: 35px 30px 35px 30px;
   }
 
   .services__list {

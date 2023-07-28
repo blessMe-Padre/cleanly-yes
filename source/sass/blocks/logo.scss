@@ -18,6 +18,12 @@
   }
 }
 
+@media (min-width:1200px) {
+  .logo__link--header {
+    display: none;
+  }
+}
+
 .logo__link::before {
   content: '';
   position: absolute;

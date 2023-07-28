@@ -4,6 +4,7 @@ const initIntroSlider = () => {
         loop: true,
         speed: 2000,
         slidesPerView: 1,
+        spaceBetween: 20,
         autoplay: {
             delay: 5000,
         },

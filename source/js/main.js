@@ -11,7 +11,6 @@ import WOW from './modules/wow';
 import { initTabs } from './modules/tabs';
 import { initAccordions } from './modules/accordion';
 
-
 window.addEventListener('DOMContentLoaded', () => {
 
   // Modules

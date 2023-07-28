@@ -1,7 +1,8 @@
 .title {
-    font-size: 36px;
+    @include adaptiv-value("font-size", 36, 26, 0);
     line-height: 1.2;
-    margin: 0 0 30px 0;
+    margin: 0;
+    @include adaptiv-value("margin-bottom", 30, 15, 0);
     color: $color-shaft;
     font-weight: 500;
     display: inline-block;

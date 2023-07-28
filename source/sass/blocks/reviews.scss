@@ -11,6 +11,10 @@
     margin-top: 80px;
     position: relative;
     padding: 0 50px;
+
+    @include vp-767 {
+        margin-top: 30px;
+    }
 }
 
 .reviews-item__header {
@@ -97,6 +101,7 @@
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
+    padding: 0 10px;
 }
 
 .reviews__cringe-title {
