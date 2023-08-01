@@ -71,3 +71,9 @@
     background-color: $color-light-green;
     color: $color-default-white;
 }
+
+.price__sales {
+    font-size: 20px;
+    display: inline-block;
+    border-bottom: 2px solid $color-light-green;
+}

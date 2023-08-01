@@ -5681,6 +5681,8 @@ button,
   width: 530px;
   height: 530px;
   background-color: #e1f3da;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
 }
 
 .intro__item-img img {
@@ -6452,6 +6454,12 @@ textarea.form__input {
   color: #ffffff;
 }
 
+.price__sales {
+  font-size: 20px;
+  display: inline-block;
+  border-bottom: 2px solid #8CC62A;
+}
+
 /* faq start  */
 
 .faq {
@@ -6558,6 +6566,43 @@ textarea.form__input {
 
 ._tabs-content._active {
   opacity: 1;
+}
+
+.partners {
+  padding: 70px 0;
+}
+
+.partners__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.partners__link {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.partners__link img {
+  margin: 0 auto;
+}
+
+.partners__link p {
+  margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -6778,6 +6823,10 @@ textarea.form__input {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+  }
+
+  .partners {
+    padding: 30px 0;
   }
 }
 
