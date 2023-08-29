@@ -13,6 +13,10 @@
   position: relative;
   padding-left: 30px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   span {
     color: $color-light-green;
   }
@@ -24,15 +28,15 @@
   }
 }
 
-.logo__link::before {
-  content: '';
-  position: absolute;
-  padding: 0;
-  top: -15px;
-  left: -0;
-  width: 40px;
-  height: 40px;
-  background-image: url('../img/content/clever.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// .logo__link::before {
+//   content: '';
+//   position: absolute;
+//   padding: 0;
+//   top: -15px;
+//   left: -0;
+//   width: 40px;
+//   height: 40px;
+//   background-image: url('../img/content/clever.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
